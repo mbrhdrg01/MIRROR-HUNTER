@@ -70,8 +70,8 @@ def stats(update, context):
 
 def start(update, context):
     buttons = ButtonMaker()
-    buttons.buildbutton("Updates Channel", "https://t.me/AnimeDynastyEN")
-    buttons.buildbutton("Support Group", "https://t.me/AnimeDynastyEN_Support")
+    buttons.buildbutton("Owner", "https://t.me/zkp143")
+    buttons.buildbutton("Support Group", "https://t.me/+QejYBZ45iek0Y2Nk")
     uname = f'<a href="tg://user?id={update.message.from_user.id}">{update.message.from_user.first_name}</a>'
     reply_markup = InlineKeyboardMarkup(buttons.build_menu(2))
     if CustomFilters.authorized_user(update) or CustomFilters.authorized_chat(update):
