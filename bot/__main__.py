@@ -207,12 +207,12 @@ leech_help_string_telegraph = f'''<br>
 
 if LEECH_ENABLED:
     help = telegraph.create_page(
-        title='Mirror Hunter & Leech Help',
+        title='MM Mirror & Leech Help',
         content=mirror_help_string_telegraph + leech_help_string_telegraph,
     )["path"]
 else:
     help = telegraph.create_page(
-        title='Mirror Hunter Help',
+        title='MM Mirror Group Help',
         content=mirror_help_string_telegraph,
     )["path"]
 
@@ -220,7 +220,7 @@ else:
 if OWNER_ID:
     try:
         help = telegraph.create_page(
-        title='Mirror Hunter Help',
+        title='MM Mirror Group Help',
         content=mirror_help_string_telegraph + leech_help_string_telegraph + sudo_help_string_telegraph,
     )["path"]
     except Exception as e:
